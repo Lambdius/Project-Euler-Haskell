@@ -1,12 +1,9 @@
 {-# LANGUAGE MultiWayIf #-}
 
 
---
+-- https://euler.jakumo.org/problems/view/3.html
 
 
-
-
--- best practice
 lpf :: Integer -> Integer -> Integer -> Integer
 lpf n d a = if 
     | d * d <= n && mod n d == 0 -> lpf ( div n d ) d d
